@@ -85,11 +85,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void addResponse(String response){
+        messageList.remove(messageList.size()-1);
         addTOChat(response, Message.SEND_BY_BOT);
     }
 
     void callApi(String question){
         //okhttp
+
+        messageList.add(new Message("Typing...", Message.SEND_BY_BOT));
+
         JSONObject jsonbody = new JSONObject();
         try {
             jsonbody.put("model","text-davinci-003");
