@@ -14,14 +14,13 @@
         />
 
     <TextView
+        android:id="@+id/welcome_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/welcome_view"
         android:layout_centerInParent="true"
-        android:text="Welcome to Easy ChatGPT"
         android:gravity="center"
-        android:textSize="28sp"
-        />
+        android:text="Welcome to Easy ChatGPT \n Try it Out"
+        android:textSize="28sp" />
     
     <RelativeLayout
         android:layout_width="match_parent"
@@ -31,15 +30,14 @@
         android:id="@+id/bottom_layout">
 
         <EditText
+            android:id="@+id/message_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/message_edit_text"
             android:layout_centerInParent="true"
-            android:hint="Write here"
-            android:padding="16dp"
             android:layout_toLeftOf="@id/send_btn"
             android:background="@drawable/roundedcorner"
-            />
+            android:hint="Write here"
+            android:padding="14dp" />
 
         <ImageButton
             android:layout_width="48dp"
