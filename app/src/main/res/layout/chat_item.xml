@@ -27,7 +27,7 @@
         android:layout_alignParentEnd="true"
         android:id="@+id/right_chat_view"
         android:background="@drawable/roundedcorner"
-        android:backgroundTint="#673AB7"
+        android:backgroundTint="#8BC34A"
         android:padding="8dp"
         android:layout_marginStart="80dp"        >
     <TextView
